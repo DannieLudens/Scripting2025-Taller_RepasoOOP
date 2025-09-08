@@ -2,6 +2,8 @@
 
 ## Diagrama UML de BT (Behaviour Tree o Árbol de comportamiento)
 
+### 1. Corregir y completar el Diagrama UML
+
 <img width="1819" height="1319" alt="image" src="https://github.com/user-attachments/assets/11bd166c-c7e2-4144-b9d4-1d36d5b4c2e1" />
 
 <details>
@@ -15,10 +17,12 @@ Repaso
 
 </details>
 
-## Implementación del BT
+---
+
+### 2. Implementar el diseño de BT arbol de comportamiento 
 
 <details>
-  <summary>El "Esqueleto"</summary><br>
+  <summary>El "Esqueleto" Framework de BT</summary><br>
 
 <details>
   <summary>Node.cs</summary><br> 
@@ -415,12 +419,340 @@ namespace Taller_OOP
 
   `children[0]` es la forma de acceder al primer (y único) elemento en una lista. `Root` simplemente delega la ejecución y reporta el resultado que su hijo le devuelva.
 
-</details><br>
+</details>
+
+</details>
+
+---
+
+## Implementación del BT
 
  <details>
-  <summary>Node.cs</summary><br> 
+  <summary>Program.cs</summary><br> 
 
 ```cs
+using System;
+using System.Collections.Generic;
 
+namespace Taller_OOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // =================================================================
+            // --- 1. CONFIGURACIÓN DE LA SIMULACIÓN ---
+            // =================================================================
+            Agent agent = new Agent("IA-01", new Vector2D(0, 0));
+            Vector2D targetPosition = new Vector2D(50, 25);
+            // La distancia a la que la IA debe dejar de moverse.
+            float stoppingDistance = 5.0f; 
+
+            Console.WriteLine("Simulación de Árbol de Comportamiento iniciada.");
+            Console.WriteLine($"Agente '{agent.Name}' empieza en ({agent.Position.X}, {agent.Position.Y})");
+            Console.WriteLine($"Objetivo en ({targetPosition.X}, {targetPosition.Y})");
+            Console.WriteLine("=================================================");
+
+
+            // =================================================================
+            // --- 2. CONSTRUCCIÓN DEL ÁRBOL DE COMPORTAMIENTO ---
+            // Se construye de abajo hacia arriba (de las hojas a la raíz)
+            // =================================================================
+
+            // Nivel 3: Las Tareas (Hojas)
+            Task moveToTarget = new MoveToTask(agent, targetPosition);
+            Task wait = new WaitTask(1000); // Espera 1 segundo (1000 ms)
+
+            // Nivel 2: El Selector de Movimiento
+            // Si el Check() falla, esta rama no se ejecuta.
+            // Si el Check() tiene éxito, ejecuta su único hijo: la tarea de moverse.
+            Selector shouldMoveSelector = new IsTargetInRangeSelector(
+                new List<Node> { moveToTarget }, // Hijos de este selector
+                agent.Position,
+                targetPosition,
+                stoppingDistance 
+            );
+
+            // Nivel 1: La Secuencia Principal
+            // Ejecutará a sus hijos en orden: primero el selector, luego la espera.
+            Sequence rootSequence = new Sequence(new List<Node> {
+                shouldMoveSelector,
+                wait
+            });
+
+            // Nivel 0: La Raíz del Árbol
+            // El punto de entrada que inicia toda la ejecución.
+            Root behaviorTree = new Root(rootSequence);
+
+
+            // =================================================================
+            // --- 3. BUCLE PRINCIPAL DE EJECUCIÓN ---
+            // =================================================================
+            int turn = 1;
+            // El bucle se ejecuta mientras el agente no haya llegado al objetivo.
+            while (Vector2D.Distance(agent.Position, targetPosition) > stoppingDistance)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"\n--- TURNO {turn} ---");
+                Console.ResetColor();
+
+                // ¡Aquí es donde se ejecuta todo el árbol!
+                behaviorTree.Execute();
+                turn++;
+            }
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n=================================================");
+            Console.WriteLine("¡SIMULACIÓN COMPLETA! El agente ha llegado a su destino.");
+            Console.ResetColor();
+            Console.ReadKey();
+        }
+    }
+}
 ```
-</details><br>
+</details>
+
+---
+
+### 2.a. Selector de distancia
+
+ <details>
+  <summary>Vector2D.cs</summary><br> 
+
+Como vamos a trabajar con distancias, necesitamos una forma de representar coordenadas (x, y). Crearemos una clase muy simple para esto Vector2D.cs
+
+```cs
+using System;
+
+namespace Taller_OOP
+{
+    // Clase auxiliar para representar una posición en un espacio 2D
+    public class Vector2D
+    {
+        public float X { get; set; }
+        public float Y { get; set; }
+
+        public Vector2D(float x, float y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        // Método estático para calcular la distancia entre dos puntos.
+        // La fórmula es: raíz cuadrada de ((x2-x1)^2 + (y2-y1)^2)
+        public static float Distance(Vector2D a, Vector2D b)
+        {
+            return (float)Math.Sqrt(Math.Pow(b.X - a.X, 2) + Math.Pow(b.Y - a.Y, 2));
+        }
+    }
+}
+```
+</details>
+
+
+ <details>
+  <summary>IsTargetInRangeSelector.cs</summary><br> 
+
+Selector de Distancia. para el punto 2.a. Creamos una clase que hereda de `Selector` y sobrescribe el método `Check()` para que haga el cálculo de la distancia.
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Taller_OOP
+{
+    // --- NOTA DE DISEÑO ---
+    // Esta es nuestra clase especializada que hereda de Selector.
+    // Su única responsabilidad es verificar una condición de distancia.
+    public class IsTargetInRangeSelector : Selector
+    {
+        // Atributos privados para guardar la información que necesita para su condición.
+        private Vector2D _agentPosition;
+        private Vector2D _targetPosition;
+        private float _validDistance;
+
+        // El constructor recibe no solo los hijos, sino también los datos para la condición.
+        public IsTargetInRangeSelector(List<Node> children, Vector2D agentPos, Vector2D targetPos, float distance) : base(children)
+        {
+            _agentPosition = agentPos;
+            _targetPosition = targetPos;
+            _validDistance = distance;
+        }
+
+        // --- NOTA DE DISEÑO ---
+        // Sobrescribimos el método 'Check()' que definimos como 'virtual' en la clase Selector.
+        // Aquí es donde implementamos la lógica de distancia del taller.
+        public override bool Check()
+        {
+            float currentDistance = Vector2D.Distance(_agentPosition, _targetPosition);
+            Console.WriteLine($"\n--- Chequeando Condición de Distancia ---");
+            Console.WriteLine($"Distancia actual: {currentDistance:F2} | Distancia de parada: {_validDistance:F2}");
+
+            // El check tiene ÉXITO si estamos MÁS LEJOS que la distancia de parada.
+            // Esto permite que la rama de movimiento se ejecute.
+            if (currentDistance > _validDistance)
+            {
+                Console.WriteLine("Resultado: El objetivo NO ESTÁ en el rango de parada. Se debe mover. (Check = true)");
+                return true; // Éxito, permite la ejecución
+            }
+            else
+            {
+                Console.WriteLine("Resultado: El objetivo YA ESTÁ en el rango de parada. No se debe mover. (Check = false)");
+                return false; // Fallo, detiene la ejecución de esta rama
+            }
+        }
+    }
+}
+```
+</details>
+
+---
+
+### 2.b. Task de Movimiento
+
+<details>
+  <summary>Agent.cs</summary><br> 
+
+Para que nuestra tarea de movimiento pueda modificar la posición de la IA, es una buena práctica de POO encapsular los datos de la IA en su propia clase. Esto hace que el código sea más limpio y organizado.
+
+```cs
+namespace Taller_OOP
+{
+    // Una clase simple para contener el estado de nuestra IA.
+    public class Agent
+    {
+        public string Name { get; set; }
+        public Vector2D Position { get; set; }
+
+        public Agent(string name, Vector2D position)
+        {
+            Name = name;
+            Position = position;
+        }
+    }
+}
+```
+
+</details>
+
+<details>
+  <summary>MoveToTask.cs</summary><br> 
+
+Para el punto 2.b. `MoveToTask` Heredará de `Task` y contendrá la lógica para mover al agente
+
+```cs
+using System;
+
+namespace Taller_OOP
+{
+    // --- NOTA DE DISEÑO ---
+    // Tarea especializada que mueve un Agente hacia un objetivo.
+    public class MoveToTask : Task
+    {
+        // Guardamos las referencias al agente y al objetivo
+        private Agent _agent;
+        private Vector2D _targetPosition;
+        private float _stepSpeed = 8.5f; // Cuánto se mueve el agente en cada ejecución
+
+        public MoveToTask(Agent agent, Vector2D targetPosition)
+        {
+            _agent = agent;
+            _targetPosition = targetPosition;
+        }
+
+        public override bool Execute()
+        {
+            Console.WriteLine($"\n--- Ejecutando Tarea de Movimiento ---");
+
+            // 1. Calcular el vector de dirección (hacia dónde moverse)
+            Vector2D direction = new Vector2D(
+                _targetPosition.X - _agent.Position.X,
+                _targetPosition.Y - _agent.Position.Y
+            );
+
+            // 2. Calcular la distancia restante
+            float distance = Vector2D.Distance(_agent.Position, _targetPosition);
+            Console.WriteLine($"Distancia restante: {distance:F2}");
+
+            // 3. Si ya estamos muy cerca, mover directamente al punto final y terminar.
+            if (distance < _stepSpeed)
+            {
+                _agent.Position = _targetPosition;
+                Console.WriteLine($"¡{_agent.Name} ha llegado al objetivo!");
+            }
+            else
+            {
+                // 4. Mover al agente un pequeño paso en la dirección correcta
+                // Normalizamos el vector de dirección (para que su longitud sea 1)
+                direction.X /= distance;
+                direction.Y /= distance;
+                
+                // Y lo multiplicamos por la velocidad de paso para mover al agente
+                _agent.Position.X += direction.X * _stepSpeed;
+                _agent.Position.Y += direction.Y * _stepSpeed;
+
+                Console.WriteLine($"Nueva posición de {_agent.Name}: ({_agent.Position.X:F2}, {_agent.Position.Y:F2})");
+            }
+
+            // Esta tarea siempre se considera exitosa si puede dar un paso.
+            return true;
+        }
+    }
+}
+```
+
+</details>
+
+---
+
+### 2.c. Sequence y Espera
+
+<details>
+  <summary>WaitTask.cs</summary><br> 
+
+Para el punto 2.c. Es una tarea simple que solo pausa la ejecución por un tiempo determinado.
+
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading; // Necesitamos esto para Thread.Sleep
+
+namespace Taller_OOP
+{
+    // --- NOTA DE DISEÑO ---
+    // Tarea especializada que pausa la ejecución del árbol.
+    public class WaitTask : Task
+    {
+        private int _millisecondsToWait;
+
+        // El constructor recibe el tiempo en milisegundos que debe esperar.
+        public WaitTask(int milliseconds)
+        {
+            _millisecondsToWait = milliseconds;
+        }
+
+        public override bool Execute()
+        {
+            Console.WriteLine($"\n--- Ejecutando Tarea de Espera ---");
+            Console.WriteLine($"Esperando por {_millisecondsToWait} ms...");
+
+            // Pausa el hilo de ejecución del programa.
+            Thread.Sleep(_millisecondsToWait);
+
+            Console.WriteLine("Espera terminada.");
+            // Una espera siempre se considera exitosa.
+            return true;
+        }
+    }
+}
+```
+
+</details>
+
+---
