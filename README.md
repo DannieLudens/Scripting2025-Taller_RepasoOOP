@@ -8,8 +8,8 @@
 
 <details>
   <summary>Anotaciones</summary>
-
-![DiagramaUMLExplicado](https://github.com/user-attachments/assets/2d4e782e-99f0-40d1-9c5b-49e077439a8b)
+  
+![DiagramaUMLExplicado](https://github.com/user-attachments/assets/7b9db75e-4c91-42dd-9267-3a6455cbfb4c)
 
 Repaso
 
@@ -18,6 +18,8 @@ Repaso
 </details>
 
 ---
+
+![DiagramaUMLImplement](https://github.com/user-attachments/assets/bb9d045c-a831-43de-a9b5-7d432f2cdacc)
 
 ### 2. Implementar el diseño de BT arbol de comportamiento 
 
