@@ -4,7 +4,7 @@
 
 ### 1. Corregir y completar el Diagrama UML
 
-<img width="1819" height="1319" alt="image" src="https://github.com/user-attachments/assets/11bd166c-c7e2-4144-b9d4-1d36d5b4c2e1" />
+<img width="1250" height="903" alt="image" src="https://github.com/user-attachments/assets/9611dd2f-02cf-4b57-929f-d65ec3b12f39" />
 
 <details>
   <summary>Anotaciones</summary>
