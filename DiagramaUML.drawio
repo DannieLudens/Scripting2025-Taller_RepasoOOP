@@ -1,0 +1,419 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Página-1" id="34Zq3_Ia5UEQdRfcrSbR">
+    <mxGraphModel dx="6377" dy="3363" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-126" value="&lt;h3&gt;&lt;br&gt;&lt;/h3&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#B266FF;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1548" y="45" width="551" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-1" value="&lt;i&gt;&lt;font face=&quot;Helvetica&quot;&gt;Node&lt;/font&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-914" y="1041" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-2" value="# children: Node [ ]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-4" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-1">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-5" value="&lt;i&gt;Abstract Class&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#808080;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-888.5" y="1021" width="109" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-6" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;i&gt;Classname&lt;/i&gt;&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1505" y="92" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-7" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-6">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-6">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-9" value="&lt;i&gt;+ method(type): type&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-6">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-10" value="&lt;i&gt;Abstract Class&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#808080;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1473" y="69" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-11" value="Atributos" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#808080;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1329" y="123.5" width="86" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-12" value="Metodos ()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#808080;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1322" y="156.5" width="86" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.71;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-14" target="ZbpEigBZdeaHz2g7RG4k-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-800" y="1149" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-645" y="1290" />
+              <mxPoint x="-645" y="1202" />
+              <mxPoint x="-800" y="1202" />
+              <mxPoint x="-800" y="1159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-13" value="&lt;font face=&quot;Helvetica&quot;&gt;Root&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-584" y="1251" width="183" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-14" value="# {children.size = 1}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-13">
+          <mxGeometry y="26" width="183" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-13">
+          <mxGeometry y="52" width="183" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-16" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-13">
+          <mxGeometry y="60" width="183" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.486;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-17" target="ZbpEigBZdeaHz2g7RG4k-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-683" y="1252" />
+              <mxPoint x="-836" y="1252" />
+              <mxPoint x="-836" y="1127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-17" value="&lt;font face=&quot;Helvetica&quot;&gt;Task&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-767" y="1341" width="168" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-18" value="# {children.size = 0}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-17">
+          <mxGeometry y="26" width="168" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-17">
+          <mxGeometry y="52" width="168" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-20" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-17">
+          <mxGeometry y="60" width="168" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;entryX=0.27;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-21" target="ZbpEigBZdeaHz2g7RG4k-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-859" y="1164" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-21" value="&lt;i&gt;&lt;font face=&quot;Helvetica&quot;&gt;Composite&lt;/font&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-984" y="1271" width="174" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-22" value="# {children.size &amp;gt;= 1}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-21">
+          <mxGeometry y="26" width="174" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-21">
+          <mxGeometry y="52" width="174" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-24" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-21">
+          <mxGeometry y="60" width="174" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.387;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-25" target="ZbpEigBZdeaHz2g7RG4k-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-25" value="&lt;font face=&quot;Helvetica&quot;&gt;Selector&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1070" y="1475" width="160" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-25">
+          <mxGeometry y="26" width="160" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-28" value="&lt;i&gt;+ Check(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-25">
+          <mxGeometry y="45" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.629;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-29" target="ZbpEigBZdeaHz2g7RG4k-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-794" y="1404" />
+              <mxPoint x="-875" y="1404" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-29" value="&lt;font face=&quot;Helvetica&quot;&gt;Sequence&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-874.5" y="1452" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-29">
+          <mxGeometry y="26" width="160" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-32" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-29">
+          <mxGeometry y="44" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-45" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.991;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashPattern=1 2;strokeColor=#7EA6E0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-22" target="ZbpEigBZdeaHz2g7RG4k-96">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-979" y="1301" as="sourcePoint" />
+            <mxPoint x="-1413" y="1415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-48" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=-0.001;entryY=0.916;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-53" target="ZbpEigBZdeaHz2g7RG4k-58">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-938" y="402" as="sourcePoint" />
+            <mxPoint x="-814" y="509" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-930" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-53" value="&lt;font face=&quot;Helvetica&quot;&gt;Universidad&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1010" y="301" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-54" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-53">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-55" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-53">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-56" value="&lt;i&gt;+ method(type): type&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-53">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-57" value="&lt;font face=&quot;Helvetica&quot;&gt;Estudiantes&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-847" y="475" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-58" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-57">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-59" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-57">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-60" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-57">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-61" value="&lt;i&gt;&lt;font face=&quot;Helvetica&quot;&gt;Node&lt;/font&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1200" y="-710" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-62" value="# children: Node [ ]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-61">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-63" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-61">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-64" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-61">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.717;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-68" target="ZbpEigBZdeaHz2g7RG4k-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-67" value="&lt;font face=&quot;Helvetica&quot;&gt;Root&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-960" y="-610" width="183" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-68" value="# {children.size = 1}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-67">
+          <mxGeometry y="26" width="183" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-69" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-67">
+          <mxGeometry y="52" width="183" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-70" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-67">
+          <mxGeometry y="60" width="183" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-72" target="ZbpEigBZdeaHz2g7RG4k-61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1016" y="-530" />
+              <mxPoint x="-1120" y="-530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-72" value="&lt;font face=&quot;Helvetica&quot;&gt;Task&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1100" y="-479" width="168" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-73" value="# {children.size = 0}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-72">
+          <mxGeometry y="26" width="168" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-74" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-72">
+          <mxGeometry y="52" width="168" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-75" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-72">
+          <mxGeometry y="60" width="168" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.259;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-77" target="ZbpEigBZdeaHz2g7RG4k-64">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1267" y="-528" />
+              <mxPoint x="-1159" y="-528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-77" value="&lt;i&gt;&lt;font face=&quot;Helvetica&quot;&gt;Composite&lt;/font&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1354" y="-479" width="174" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-78" value="# {children.size &amp;gt;= 1}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-77">
+          <mxGeometry y="26" width="174" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-79" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-77">
+          <mxGeometry y="52" width="174" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-80" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-77">
+          <mxGeometry y="60" width="174" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.387;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-82" target="ZbpEigBZdeaHz2g7RG4k-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-82" value="&lt;font face=&quot;Helvetica&quot;&gt;Selector&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1440" y="-309" width="160" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-83" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-82">
+          <mxGeometry y="26" width="160" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-84" value="&lt;i&gt;+ Check(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-82">
+          <mxGeometry y="45" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.629;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;endSize=20;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-86" target="ZbpEigBZdeaHz2g7RG4k-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-86" value="&lt;font face=&quot;Helvetica&quot;&gt;Sequence&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1244.5" y="-309" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-87" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-86">
+          <mxGeometry y="26" width="160" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-88" value="&lt;i&gt;+ Execute(): bool&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-86">
+          <mxGeometry y="44" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-89" value="&lt;i&gt;Abstract Class&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#808080;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-963" y="1251" width="109" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-91" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;¿Por qué es una Clase Abstracta?&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;code&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Node&lt;/span&gt;&lt;/code&gt; es un concepto, no un objeto real. No se puede crear una instancia de &lt;code&gt;Node&lt;/code&gt; directamente.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Su propósito es definir el &quot;contrato&quot; que todas las clases hijas deben seguir: tener un arreglo de hijos y la obligación de implementar un método &lt;code&gt;Execute()&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#FF8000;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1560" y="924" width="471" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-93" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1.003;entryY=0.558;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.007;exitY=0.166;exitDx=0;exitDy=0;exitPerimeter=0;dashPattern=1 2;strokeColor=#FF8000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-1" target="ZbpEigBZdeaHz2g7RG4k-91">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-820" y="1353" as="sourcePoint" />
+            <mxPoint x="-1126" y="1234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-94" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;¿Por qué es una Clase Abstracta?&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;code&gt;Composite&lt;/code&gt; también es un concepto. Representa la idea de un nodo que agrupa hijos, pero no tiene una lógica de ejecución propia.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Delega esa responsabilidad a sus hijos concretos (&lt;code&gt;Sequence&lt;/code&gt; y &lt;code&gt;Selector&lt;/code&gt;), que son los que deciden &lt;i&gt;cómo&lt;/i&gt; ejecutar a ese grupo de hijos&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#FF8000;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1518" y="1081" width="471" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-95" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.997;entryY=0.527;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.003;exitY=0.15;exitDx=0;exitDy=0;exitPerimeter=0;dashPattern=1 2;strokeColor=#FF8000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-21" target="ZbpEigBZdeaHz2g7RG4k-94">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-791" y="1053" as="sourcePoint" />
+            <mxPoint x="-1050" y="1022" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-96" value="&lt;p&gt;&lt;b&gt;Restricción de Hijos&lt;/b&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Un nodo Compuesto (Composite) es un &quot;contenedor&quot;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;citation-142&quot;&gt;Su propósito es orquestar a sus hijos, por lo que, para el taller, debe tener&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;al menos un hijo&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-142 citation-end-142&quot;&gt; para ser válido.&lt;/span&gt;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#7EA6E0;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1484" y="1247" width="370" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-97" value="&lt;p&gt;&lt;b&gt;Restricción de Hijos&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;citation-141 citation-end-141&quot;&gt;Una Tarea (Task) es siempre un nodo &quot;hoja&quot;, el final de una rama del árbol.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;citation-141 citation-end-141&quot;&gt;&lt;sup data-turn-source-index=&quot;3&quot; class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt; Se encarga de realizar una acción concreta, por lo que&amp;nbsp;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;no puede tener hijos&lt;/b&gt;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#7EA6E0;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-408" y="1431" width="314" height="131" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-98" value="&lt;p&gt;&lt;b&gt;Restricción de Hijos&lt;/b&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;citation-143&quot;&gt;Por definición del taller, el nodo Raíz es el inicio del árbol y solo puede tener&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;un único hijo&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-143 citation-end-143&quot;&gt;.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-143 citation-end-143&quot;&gt;&lt;sup data-turn-source-index=&quot;1&quot; class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt; Su única función es iniciar la ejecución de la rama principal del árbol&lt;/span&gt;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#7EA6E0;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-338" y="1251" width="285" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-99" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashPattern=1 2;exitPerimeter=0;strokeColor=#7EA6E0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-97" target="ZbpEigBZdeaHz2g7RG4k-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-851" y="1340" as="sourcePoint" />
+            <mxPoint x="-1072" y="1421" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-100" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashPattern=1 2;exitPerimeter=0;strokeColor=#7EA6E0;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-98" target="ZbpEigBZdeaHz2g7RG4k-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-387" y="1449" as="sourcePoint" />
+            <mxPoint x="-526" y="1334" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-101" value="&lt;p&gt;El método &lt;code&gt;Execute()&lt;/code&gt; se define como &lt;b&gt;abstracto&lt;/b&gt; en la clase &lt;code&gt;Node&lt;/code&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Cada clase hija concreta (&lt;code&gt;Task&lt;/code&gt;, &lt;code&gt;Sequence&lt;/code&gt;, etc.) está obligada a &quot;sobrescribir&quot; este método, proporcionando su propia implementación y lógica específica.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Esto es un pilar del &lt;b&gt;Polimorfismo&lt;/b&gt; y es lo que permite que cada nodo se comporte de manera diferente al ser ejecutado.&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#30FF3E;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-573" y="1599" width="411" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-103" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.766;entryY=0.919;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;dashPattern=1 2;exitPerimeter=0;entryPerimeter=0;strokeColor=light-dark(#000000,#30FF3E);" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-101" target="ZbpEigBZdeaHz2g7RG4k-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-227" y="1315" as="sourcePoint" />
+            <mxPoint x="-490" y="1306" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-104" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.507;entryY=1.009;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;dashPattern=1 2;exitPerimeter=0;entryPerimeter=0;strokeColor=light-dark(#000000,#30FF3E);" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-101" target="ZbpEigBZdeaHz2g7RG4k-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-558" y="1864" as="sourcePoint" />
+            <mxPoint x="-358" y="1511" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-105" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;dashPattern=1 2;exitPerimeter=0;strokeColor=light-dark(#000000,#30FF3E);" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-101" target="ZbpEigBZdeaHz2g7RG4k-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-643" y="1712" as="sourcePoint" />
+            <mxPoint x="-638" y="1492" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-106" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;dashPattern=1 2;exitPerimeter=0;strokeColor=light-dark(#000000,#30FF3E);" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-101" target="ZbpEigBZdeaHz2g7RG4k-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-630" y="1649" as="sourcePoint" />
+            <mxPoint x="-695" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-107" value="&lt;div style=&quot;line-height: 50%;&quot;&gt;&lt;p&gt;&lt;b&gt;Retorno &lt;code&gt;bool&amp;nbsp;&lt;/code&gt;&lt;/b&gt;El valor &lt;code&gt;bool&lt;/code&gt; que devuelve &lt;code&gt;Execute()&lt;/code&gt; es fundamental.&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;Representa el estado final de la ejecución de un nodo:&lt;/p&gt;&lt;ul style=&quot;padding-left: 15px;&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;true&lt;/code&gt;: La operación fue un &lt;b&gt;éxito&lt;/b&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;false&lt;/code&gt;: La operación fue un &lt;b&gt;fallo&lt;/b&gt;.&lt;br&gt;&lt;br&gt;&lt;br&gt;Este resultado es el que permite a los nodos padres (como &lt;code&gt;Sequence&lt;/code&gt; o &lt;code&gt;Selector&lt;/code&gt;) &lt;br&gt;&lt;br&gt;&lt;br&gt;tomar decisiones sobre si continuar o detener la ejecución del árbol&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#FF3333;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-601" y="1096" width="507" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-108" value="&lt;p&gt;El método &lt;code&gt;Check()&lt;/code&gt; actúa como una &lt;b&gt;condición de guarda&lt;/b&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;citation-160&quot;&gt;Para el taller, el método&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Execute()&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-160&quot;&gt; del &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Selector&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-160&quot;&gt; solo puede ser invocado si &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Check()&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-160&quot;&gt; devuelve &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;true&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-160 citation-end-160&quot;&gt;&lt;sup data-turn-source-index=&quot;2&quot; class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-159&quot;&gt;Si&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Check()&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-159&quot;&gt; es &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;false&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-159&quot;&gt;, el &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Selector&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-159 citation-end-159&quot;&gt; falla inmediatamente sin intentar ejecutar a sus hijos&lt;sup data-turn-source-index=&quot;3&quot; class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;.&lt;/span&gt;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#30FF3E;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1512" y="1559" width="410" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-109" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.974;entryY=0.121;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashPattern=1 2;strokeColor=light-dark(#000000,#30FF3E);align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-28" target="ZbpEigBZdeaHz2g7RG4k-108">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1037" y="1449" as="sourcePoint" />
+            <mxPoint x="-1218" y="1548" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-111" value="&lt;p&gt;La visibilidad de &lt;code&gt;children&lt;/code&gt; es &lt;code&gt;protected&lt;/code&gt;&amp;nbsp;(#) por una razón clave:&lt;/p&gt;&lt;ul style=&quot;padding-left: 15px;&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;No es &lt;code&gt;private&lt;/code&gt; (&lt;code&gt;-&lt;/code&gt;)&lt;/b&gt; porque las clases hijas (&lt;code&gt;Composite&lt;/code&gt;, &lt;code&gt;Root&lt;/code&gt;, etc.) necesitan acceder a la lista para ejecutar a sus hijos.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;No es &lt;code&gt;public&lt;/code&gt; (&lt;code&gt;+&lt;/code&gt;)&lt;/b&gt; para proteger la integridad del árbol. Si fuera público, cualquier código externo podría añadir o quitar hijos, rompiendo las reglas (ej. &lt;code&gt;Root&lt;/code&gt; solo puede tener un hijo).&lt;br&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;br&gt;&lt;/font&gt;protected&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt; ofrece el balance perfecto: acceso para la familia de clases, protección contra el exterior.&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#7EA6E0;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-639" y="921" width="599" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-112" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.738;exitDx=0;exitDy=0;dashPattern=1 2;strokeColor=#7EA6E0;exitPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-111" target="ZbpEigBZdeaHz2g7RG4k-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-584" y="1081" as="sourcePoint" />
+            <mxPoint x="-643" y="1125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-113" value="&lt;p&gt;Ejecuta a todos sus hijos en orden.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Devuelve &lt;code&gt;éxito&lt;/code&gt; solo si &lt;b&gt;TODOS&lt;/b&gt; sus hijos tienen éxito. &lt;span class=&quot;citation-158&quot;&gt;Falla tan pronto como&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;UNO&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-158 citation-end-158&quot;&gt; de sus hijos falla&lt;sup data-turn-source-index=&quot;4&quot; class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;.&lt;/span&gt;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#FF8000;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1037" y="1609" width="326" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-114" value="&lt;p&gt;Ejecuta a sus hijos en orden hasta que &lt;b&gt;UNO&lt;/b&gt; de ellos devuelve &lt;code&gt;éxito&lt;/code&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-157&quot;&gt;Si un hijo tiene éxito, el&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Selector&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot; class=&quot;citation-157 citation-end-157&quot;&gt; tiene éxito y no ejecuta a los demás&lt;sup data-turn-source-index=&quot;5&quot; class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;. Falla solo si&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;TODOS&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt; sus hijos fallan.&lt;/span&gt;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#FF8000;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1514" y="1391" width="362" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-115" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0;entryY=0;entryDx=362;entryDy=63;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;dashPattern=1 2;strokeColor=#FF8000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-25" target="ZbpEigBZdeaHz2g7RG4k-114">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1045" y="1531" as="sourcePoint" />
+            <mxPoint x="-1127" y="1533" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-116" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=0.451;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;dashPattern=1 2;strokeColor=#FF8000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-29" target="ZbpEigBZdeaHz2g7RG4k-113">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-911" y="1589" as="sourcePoint" />
+            <mxPoint x="-912" y="1650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-888" y="1470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-117" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashPattern=1 2;strokeColor=#FF3333;exitPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="ZbpEigBZdeaHz2g7RG4k-107" target="ZbpEigBZdeaHz2g7RG4k-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-596" y="1051" as="sourcePoint" />
+            <mxPoint x="-653" y="1104" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-119" value="&lt;font face=&quot;Helvetica&quot;&gt;Classname&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-1223" y="92" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-120" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-119">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-121" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-119">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-122" value="&lt;i&gt;+ method(type): type&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lucida Console;" vertex="1" parent="ZbpEigBZdeaHz2g7RG4k-119">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-123" value="&lt;span style=&quot;color: rgb(127, 127, 127); font-family: &amp;quot;Lucida Console&amp;quot;; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Class&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1166" y="66" width="100" height="23.22" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-124" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;dashPattern=1 2;strokeColor=#B266FF;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-929" y="493" as="sourcePoint" />
+            <mxPoint x="-1072" y="491" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-125" value="&lt;h3&gt;¿Qué es la Agregación?&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;La agregación es un tipo de asociación entre clases que representa una relación de &quot;tiene un&quot; o &quot;es parte de&quot;. Describe que un objeto (el &quot;todo&quot;) está compuesto por otros objetos (las &quot;partes&quot;).&lt;/p&gt;&lt;p&gt;La característica clave de la Agregación es que es una relación &quot;débil&quot;. Las partes pueden existir independientemente del todo. Por ejemplo, una &lt;code&gt;Universidad&lt;/code&gt; &quot;tiene&quot; &lt;code&gt;Estudiantes&lt;/code&gt;. Si la universidad cierra, los estudiantes siguen existiendo.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;¿Por Qué Estaba en el Diagrama Original y Por Qué lo Quitamos?&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;ol start=&quot;1&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;La Intención en el Diagrama Original:&lt;/b&gt; El autor de ese diagrama inicial quiso expresar que &quot;un objeto &lt;code&gt;Composite&lt;/code&gt; &lt;b&gt;tiene&lt;/b&gt; Nodos&quot; (que serían sus hijos). La idea no era incorrecta, ya que, en efecto, un nodo compuesto se conforma de otros nodos.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Por Qué es un Error o es Redundante en este Caso:&lt;/b&gt; El problema es que esa relación ya está definida de una manera mucho más clara y directa a través del &lt;b&gt;atributo de la clase&lt;/b&gt;.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;La clase &lt;code&gt;Node&lt;/code&gt; tiene el atributo &lt;code&gt;#children: Node[]&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;La clase &lt;code&gt;Composite&lt;/code&gt; &lt;b&gt;hereda&lt;/b&gt; de &lt;code&gt;Node&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Por lo tanto, &lt;code&gt;Composite&lt;/code&gt; &lt;b&gt;ya tiene&lt;/b&gt; implícitamente el atributo &lt;code&gt;#children: Node[]&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Al tener ya el atributo que define la lista de &quot;partes&quot;, añadir una flecha de agregación para representar la misma idea es &lt;b&gt;redundante&lt;/b&gt;. Es decir, estamos diciendo dos veces lo mismo.&amp;nbsp;&lt;/p&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#B266FF;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-1541" y="256" width="471" height="469" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-127" value="&lt;div style=&quot;line-height: 70%;&quot;&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;&lt;p&gt;la &lt;b&gt;cardinalidad&lt;/b&gt; en UML es simplemente una forma de responder a la pregunta:&lt;br&gt;&lt;br&gt;&lt;b&gt;&quot;¿Cuántos?&quot;&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;Define las reglas sobre el número de objetos (instancias) de una clase que pueden &lt;br&gt;&lt;br&gt;estar&amp;nbsp;relacionados con un único objeto de otra clase. Es la forma de especificar la &lt;br&gt;&lt;br&gt;multiplicidad de una asociación.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/h3&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;Una Analogía Sencilla&lt;/h3&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Imagina que estamos modelando un &lt;code&gt;Carro&lt;/code&gt; y sus partes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Un &lt;code&gt;Carro&lt;/code&gt; tiene &lt;code&gt;Ruedas&lt;/code&gt;. La cardinalidad nos pregunta: ¿Cuántas ruedas? La &lt;br&gt;&lt;br&gt;regla sería que 1 &lt;code&gt;Carro&lt;/code&gt; está asociado a &lt;b&gt;exactamente 4&lt;/b&gt; &lt;code&gt;Ruedas&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Un &lt;code&gt;Carro&lt;/code&gt; tiene &lt;code&gt;Puertas&lt;/code&gt;. La cardinalidad nos pregunta: ¿Cuántas puertas? La &lt;br&gt;&lt;br&gt;regla podría ser que 1 &lt;code&gt;Carro&lt;/code&gt; está asociado a &lt;b&gt;entre 2 y 5&lt;/b&gt; &lt;code&gt;Puertas&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;La cardinalidad establece estas reglas numéricas para que nuestro sistema sea lógico &lt;br&gt;&lt;br&gt;y coherente.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/h3&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;¿Cómo se Aplica a Nuestro Diagrama?&lt;/h3&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;En nuestro proyecto, la relación principal es la de un nodo padre que &quot;tiene&quot; nodos &lt;br&gt;&lt;br&gt;hijos. La cardinalidad es la que nos permite aplicar las reglas específicas del taller a &lt;br&gt;&lt;br&gt;esta relación para cada tipo de nodo:&lt;/p&gt;&lt;ol start=&quot;1&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Para la clase &lt;code&gt;Root&lt;/code&gt;:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Pregunta:&lt;/b&gt; ¿Con cuántos hijos puede estar relacionado un &lt;code&gt;Root&lt;/code&gt;?&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Respuesta/Cardinalidad:&lt;/b&gt; Con &lt;b&gt;exactamente 1&lt;/b&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class=&quot;citation-169&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Nuestra Notación:&lt;/b&gt;&lt;span class=&quot;citation-169&quot;&gt; Por eso escribimos la restricción &lt;/span&gt;&lt;code&gt;{children.size = 1}&lt;/code&gt;&lt;span class=&quot;citation-169 citation-end-169&quot;&gt;&lt;sup class=&quot;superscript&quot; data-turn-source-index=&quot;1&quot;&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Para la clase &lt;code&gt;Task&lt;/code&gt;:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Pregunta:&lt;/b&gt; ¿Con cuántos hijos puede estar relacionado una &lt;code&gt;Task&lt;/code&gt;?&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Respuesta/Cardinalidad:&lt;/b&gt; Con &lt;b&gt;exactamente 0&lt;/b&gt;. &lt;span class=&quot;citation-168 citation-end-168&quot;&gt;Es una hoja, no tiene hijos&lt;sup class=&quot;superscript&quot; data-turn-source-index=&quot;2&quot;&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class=&quot;citation-167&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Nuestra Notación:&lt;/b&gt;&lt;span class=&quot;citation-167&quot;&gt; Por eso escribimos &lt;/span&gt;&lt;code&gt;{children.size = 0}&lt;/code&gt;&lt;span class=&quot;citation-167 citation-end-167&quot;&gt;&lt;sup class=&quot;superscript&quot; data-turn-source-index=&quot;3&quot;&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Para la clase &lt;code&gt;Composite&lt;/code&gt;:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Pregunta:&lt;/b&gt; ¿Con cuántos hijos puede estar relacionado un &lt;code&gt;Composite&lt;/code&gt;?&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Respuesta/Cardinalidad:&lt;/b&gt; Con &lt;b&gt;1 o más&lt;/b&gt;. &lt;span class=&quot;citation-166 citation-end-166&quot;&gt;Debe tener al menos uno para ser útil&lt;sup class=&quot;superscript&quot; data-turn-source-index=&quot;4&quot;&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Nuestra Notación:&lt;/b&gt; Por eso escribimos &lt;code&gt;{children.size &amp;gt;= 1}&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;&lt;/h3&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;Notaciones Comunes en UML&lt;/h3&gt;&lt;h3 style=&quot;line-height: 70%;&quot;&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Aunque nosotros usamos la notación de restricción &lt;code&gt;{}&lt;/code&gt; porque la relación &lt;code&gt;children&lt;/code&gt; es &lt;br&gt;&lt;br&gt;un atributo interno, cuando dibujas una línea de asociación directa entre dos clases, &lt;br&gt;&lt;br&gt;la cardinalidad se suele escribir en los extremos de la línea con estos símbolos:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;1&lt;/code&gt; : Exactamente uno.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;0..1&lt;/code&gt; : Cero o uno.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;*&lt;/code&gt; (o &lt;code&gt;0..*&lt;/code&gt;) : Cero o más (muchos).&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;1..*&lt;/code&gt; : Uno o más.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;n&lt;/code&gt; : Exactamente &lt;code&gt;n&lt;/code&gt; (ej. &lt;code&gt;4&lt;/code&gt; para las ruedas de un carro).&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h3&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#B266FF;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-644" y="29" width="614" height="831" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-128" value="&lt;h3&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;+&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127)); font-weight: normal;&quot;&gt; &lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;font-size: 12px; background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;Público:&lt;/b&gt;&lt;span style=&quot;font-size: 12px; background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127)); font-weight: normal;&quot;&gt; Cualquiera puede verlo y usarlo. Es la &quot;puerta de entrada&quot; a la clase.&lt;/span&gt;&lt;/h3&gt;&lt;h3&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;- &lt;/font&gt;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127)); font-size: 12px;&quot;&gt;Privado:&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127)); font-size: 12px; font-weight: normal;&quot;&gt; Solo la propia clase puede verlo y usarlo. Es un &quot;secreto interno&quot; que ni siquiera los hijos conocen.&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;&lt;h3&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt;#&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127));&quot;&gt; &lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127)); font-size: 12px;&quot;&gt;Protegido:&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(128, 128, 128), rgb(127, 127, 127)); font-size: 12px; font-weight: normal;&quot;&gt; La clase y sus clases hijas (herencia) pueden verlo y usarlo. Es un &quot;secreto de familia&quot;&lt;/span&gt;&lt;/h3&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#808080;fillColor=none;gradientColor=none;strokeColor=#B266FF;spacingLeft=15;spacingRight=15;spacingTop=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="-963" y="52" width="294" height="196" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbpEigBZdeaHz2g7RG4k-131" value="DiagramaUML de BT - árbol de comportamiento" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=271;height=24;" vertex="1" parent="1">
+          <mxGeometry x="-1513" y="-784" width="827" height="596" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
