@@ -82,7 +82,7 @@ namespace Taller_OOP
 
 - `;`: Nota que termina con un punto y coma, no con llaves `{}`. Esta es la sintaxis de C# para un método abstracto. Esto obliga a cualquier clase que herede de `Node` a sobrescribir este método con su propia lógica.
 
-</details><br>
+</details>
 
 <details>
   <summary>Task.cs</summary><br>  
@@ -133,7 +133,7 @@ namespace Taller_OOP
 - `Console.WriteLine(...)`: Como esta es una clase base para futuras tareas, por ahora solo vamos a hacer que imprima un mensaje en la consola para saber que se está ejecutando.
 
 - `return true;`: Toda tarea, al finalizar, debe devolver si tuvo éxito (`true`) o si falló (`false`). Por ahora, asumiremos que nuestras tareas genéricas siempre tienen éxito.
-</details><br>
+</details>
 
 <details>
   <summary>Composite.cs</summary><br> 
@@ -188,7 +188,7 @@ namespace Taller_OOP
 
 - Este constructor nos permite crear un nodo compuesto y asignarle sus hijos en una sola línea, lo cual hará que nuestro código final sea mucho más legible.
 
-</details><br>
+</details>
 
 <details>
   <summary>Sequence.cs</summary><br> 
@@ -263,7 +263,7 @@ namespace Taller_OOP
 
 - La línea `if (result == false)` es el corazón de la `Sequence`. Si un hijo falla, la secuencia entera retorna 
 
-</details><br>
+</details>
 
  <details>
   <summary>Selector.cs</summary><br> 
@@ -353,7 +353,7 @@ namespace Taller_OOP
 - Si el bucle `foreach` termina, es porque todos los hijos devolvieron `false`. Solo en ese caso, el `Selector` falla.
 
 
-</details><br>
+</details>
 
  <details>
   <summary>Root.cs</summary><br> 
