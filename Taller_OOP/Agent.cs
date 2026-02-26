@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Taller_OOP
 {
+    // Una clase simple para contener el estado de nuestra IA.
     public class Agent
     {
         public string Name { get; set; }
